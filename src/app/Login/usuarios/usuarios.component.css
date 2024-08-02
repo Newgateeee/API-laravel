@@ -1,0 +1,33 @@
+.container {
+    margin: 20px;
+  }
+  .title {
+    margin-bottom: 20px;
+  }
+  .actions {
+    margin-bottom: 20px;
+  }
+  button {
+    margin-right: 10px;
+    background-color: #f4c2c2f6; /* Color palo de rosa nude */
+    color: white;
+  }
+
+  .beige-header {
+    background-color: #d58495; /* Color beige */
+    color: rgb(70, 1, 1);
+    text-align: center;
+  }
+  .centered {
+    text-align: center;
+  }
+  body{
+    background-color: rgb(238, 237, 235);
+  }
+  div{
+    text-align-last: center;
+  }
+  /* Ajusta el ancho total de la tabla */
+
+
+

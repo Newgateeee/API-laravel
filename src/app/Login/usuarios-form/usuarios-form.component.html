@@ -1,0 +1,37 @@
+<BR>
+<form [formGroup]="usuarioForm" (ngSubmit)="onSubmit()" class="form-container">
+  <h2 class="form-title">Formulario para Agregar un nuevo Usuario</h2>
+
+  <div *ngIf="errorMessage" class="error-message">
+    {{ errorMessage }}
+  </div>
+
+  <div class="form-group">
+    <label for="name">Nombre:</label>
+    <input id="name" formControlName="name" />
+    <div *ngIf="usuarioForm.get('name')?.invalid && (usuarioForm.get('name')?.dirty || usuarioForm.get('name')?.touched)">
+      <div *ngIf="usuarioForm.get('name')?.errors?.['required']">El nombre es obligatorio.</div>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="usuario">Usuario:</label>
+    <input id="usuario" formControlName="usuario" />
+    <div *ngIf="usuarioForm.get('usuario')?.invalid && (usuarioForm.get('usuario')?.dirty || usuarioForm.get('usuario')?.touched)">
+      <div *ngIf="usuarioForm.get('usuario')?.errors?.['required']">El usuario es obligatorio.</div>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="pass">Contraseña:</label>
+    <input id="pass" formControlName="pass" type="text" />
+    <div *ngIf="usuarioForm.get('pass')?.invalid && (usuarioForm.get('pass')?.dirty || usuarioForm.get('pass')?.touched)">
+      <div *ngIf="usuarioForm.get('pass')?.errors?.['required']">La contraseña es obligatoria.</div>
+    </div>
+  </div>
+
+  <button type="submit" class="submit-button">Guardar</button>
+</form>
+
+
+

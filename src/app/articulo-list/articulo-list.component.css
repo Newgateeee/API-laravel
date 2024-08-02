@@ -1,0 +1,17 @@
+div{
+  text-align-last: center;
+}
+body{
+  background-color: rgb(237, 237, 237);
+}
+button{
+  background-color: rgba(235, 193, 209, 0.742);
+}
+.beige-header {
+  background-color: #d58495; /* Color beige */
+  color: rgb(70, 1, 1);
+  text-align: center;
+}
+.centered {
+  text-align: center;
+}

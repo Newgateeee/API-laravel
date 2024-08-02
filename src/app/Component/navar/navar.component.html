@@ -1,0 +1,19 @@
+<mat-toolbar class="custom-toolbar">
+  <mat-icon>menu</mat-icon>
+  <span>Menú</span>
+  <span class="spacer"></span>
+  <button mat-button (click)="navigateTo('/menu')">
+    <mat-icon>home</mat-icon> Inicio
+  </button>
+  <button mat-button routerLink="/articulos">
+    <mat-icon>description</mat-icon> Articulos
+  </button>
+  <button mat-button routerLink="/usuarios">
+    <mat-icon>group</mat-icon> Usuarios
+  </button>
+  <button mat-button (click)="onLogout()">
+    <mat-icon>exit_to_app</mat-icon> Cerrar Sesión
+  </button>
+</mat-toolbar>
+
+
